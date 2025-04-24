@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import ContactRow from "./ContactRow";
 
 const dummyContacts = [
@@ -11,6 +11,14 @@ function ContactList() {
 
     const [contacts, setContacts] = useState(dummyContacts)
     console.log("Contacts: ", contacts)
+    
+    useEffect(()=>{
+        const fetchContacts = async () => {
+
+            const {data} = awai
+
+        }
+    }, [])
 
     return (
         <table>
