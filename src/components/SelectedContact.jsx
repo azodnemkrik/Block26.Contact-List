@@ -18,14 +18,13 @@ function SelectedContact({selectedContactId , setSelectedContactId}) {
 
     return (
         <div>
-           {     console.log("individual", individual)
-           /*
-           <p>{ individual.name }</p>
+           { console.log("individual", individual) }
+           
+           {/* <p>{ individual.name }</p>
            <p>{ individual.email }</p>
            <p>{ individual.id }</p>
-           <p>{ individual.name }</p>
-           */
-           }
+           <p>{ individual.name }</p> */}
+          
         
             <div onClick={()=>{
                     setSelectedContactId(null)
