@@ -15,15 +15,18 @@ function SelectedContact({selectedContactId , setSelectedContactId}) {
         fetchIndividual()
     }, [])
 
+    if(!individual){
+        return null
+  }
 
     return (
         <div>
            { console.log("individual", individual) }
            
-           {/* <p>{ individual.name }</p>
+           <p>{ individual.name }</p>
            <p>{ individual.email }</p>
            <p>{ individual.id }</p>
-           <p>{ individual.name }</p> */}
+           <p>{ individual.name }</p>
           
         
             <div onClick={()=>{
